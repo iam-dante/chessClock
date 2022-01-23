@@ -8,16 +8,16 @@ export default function Settings({navigation}:{navigation:any}){
             <View style={{position:"relative",height:80,   paddingHorizontal:18, justifyContent:"center",}}>
                 <View style={{flexDirection:"row", alignItems:"center"}} >
                     <BackIcon onPress={()=>navigation.goBack()}/>
-                    <Text style={{marginLeft:12, fontSize:20,}}>SETTINGS</Text>
+                    <Text style={{marginLeft:12, fontSize:20,color:"black"}}>SETTINGS</Text>
                 </View>
                 <ColorWatch style={{position: "absolute", right:18}}/>
             </View>
             <View style={{flex: 1, paddingHorizontal:18, paddingTop:16}}>
-                <View style={{height:100, backgroundColor:"yellow", borderRadius: 6, alignItems:"center", flexDirection:"row", paddingHorizontal:10}}>
+                <View style={{height:100, backgroundColor:"#F5F5F5", borderRadius: 6, alignItems:"center", flexDirection:"row", paddingHorizontal:22, elevation:1}}>
                     <ClockIcon/>
-                    <View style={{marginLeft:18}} >
-                        <Text>Name Tourment</Text>
-                        <Text>10MS Vs 10MS</Text>
+                    <View style={{marginLeft:18, height:70, justifyContent:"space-evenly"}} >
+                        <Text style={{fontSize:18,color:"black"}}>NAME TOURNAMENT</Text>
+                        <Text style={{fontSize:18, color:"black"}}>10MS Vs 10MS</Text>
                     </View>
                 </View>
             </View>
