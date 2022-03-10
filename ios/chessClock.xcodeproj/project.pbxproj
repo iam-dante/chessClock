@@ -14,6 +14,12 @@
 		6172F2D35A4C3AA820D92908 /* libPods-chessClock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-chessClock.a */; };
 		7EF68E3733C33B6898317E18 /* libPods-chessClock-chessClockTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-chessClock-chessClockTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A8F869FAF2FB4D578A486F0F /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04B90EC88CA94FEE80782C4F /* DMSans-Bold.ttf */; };
+		547F354586154EAEA60B9285 /* DMSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90A2409ADCF8473F96A2E3CF /* DMSans-BoldItalic.ttf */; };
+		289C653702B24187B7FAC0A5 /* DMSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF56FDE91BF7474A84F7D781 /* DMSans-Italic.ttf */; };
+		261B31C841DB4101A679F375 /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C578564F4D346628BDBA6B5 /* DMSans-Medium.ttf */; };
+		539667B7D15A4D6A8145C53D /* DMSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 470A5298904D470BA15F201D /* DMSans-MediumItalic.ttf */; };
+		B893BFECAF3A493B8378F613 /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 331975739B0440B9A0145DFD /* DMSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		C0A881CF5CF3F2B244570E2A /* Pods-chessClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chessClock.debug.xcconfig"; path = "Target Support Files/Pods-chessClock/Pods-chessClock.debug.xcconfig"; sourceTree = "<group>"; };
 		D00AAFFCFCFDA5787532823F /* Pods-chessClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chessClock.release.xcconfig"; path = "Target Support Files/Pods-chessClock/Pods-chessClock.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		04B90EC88CA94FEE80782C4F /* DMSans-Bold.ttf */ = {isa = PBXFileReference; name = "DMSans-Bold.ttf"; path = "../assets/fonts/DMSans-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		90A2409ADCF8473F96A2E3CF /* DMSans-BoldItalic.ttf */ = {isa = PBXFileReference; name = "DMSans-BoldItalic.ttf"; path = "../assets/fonts/DMSans-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		EF56FDE91BF7474A84F7D781 /* DMSans-Italic.ttf */ = {isa = PBXFileReference; name = "DMSans-Italic.ttf"; path = "../assets/fonts/DMSans-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6C578564F4D346628BDBA6B5 /* DMSans-Medium.ttf */ = {isa = PBXFileReference; name = "DMSans-Medium.ttf"; path = "../assets/fonts/DMSans-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		470A5298904D470BA15F201D /* DMSans-MediumItalic.ttf */ = {isa = PBXFileReference; name = "DMSans-MediumItalic.ttf"; path = "../assets/fonts/DMSans-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		331975739B0440B9A0145DFD /* DMSans-Regular.ttf */ = {isa = PBXFileReference; name = "DMSans-Regular.ttf"; path = "../assets/fonts/DMSans-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +134,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E233CBF5F47BEE60B243DCF8 /* Pods */,
+				E62D62F5DF5B49E4B4A17C0F /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -148,6 +161,20 @@
 			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		E62D62F5DF5B49E4B4A17C0F /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				04B90EC88CA94FEE80782C4F /* DMSans-Bold.ttf */,
+				90A2409ADCF8473F96A2E3CF /* DMSans-BoldItalic.ttf */,
+				EF56FDE91BF7474A84F7D781 /* DMSans-Italic.ttf */,
+				6C578564F4D346628BDBA6B5 /* DMSans-Medium.ttf */,
+				470A5298904D470BA15F201D /* DMSans-MediumItalic.ttf */,
+				331975739B0440B9A0145DFD /* DMSans-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -245,6 +272,12 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				A8F869FAF2FB4D578A486F0F /* DMSans-Bold.ttf in Resources */,
+				547F354586154EAEA60B9285 /* DMSans-BoldItalic.ttf in Resources */,
+				289C653702B24187B7FAC0A5 /* DMSans-Italic.ttf in Resources */,
+				261B31C841DB4101A679F375 /* DMSans-Medium.ttf in Resources */,
+				539667B7D15A4D6A8145C53D /* DMSans-MediumItalic.ttf in Resources */,
+				B893BFECAF3A493B8378F613 /* DMSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

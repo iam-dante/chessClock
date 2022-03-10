@@ -1,10 +1,10 @@
 import React from "react"
 import {View, Text} from "react-native"
-import { BackIcon, ClockIcon, ColorWatch } from "../assets/icons"
+import { AddIcon, BackIcon, ClockIcon, ColorWatch } from "../assets/icons"
 
 export default function Settings({navigation}:{navigation:any}){
     return(
-        <View style={{flex:1, backgroundColor:"#FFFFFF"}}> 
+        <View style={{position:"relative",flex:1, backgroundColor:"#FFFFFF"}}> 
             <View style={{position:"relative",height:80,   paddingHorizontal:18, justifyContent:"center",}}>
                 <View style={{flexDirection:"row", alignItems:"center"}} >
                     <BackIcon onPress={()=>navigation.goBack()}/>
@@ -21,6 +21,8 @@ export default function Settings({navigation}:{navigation:any}){
                     </View>
                 </View>
             </View>
+
+            <AddIcon style={{position:"absolute", bottom:20, right:18}} onPress={()=> console.log("cliked button")}/>
         </View>
     )
 }

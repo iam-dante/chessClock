@@ -9,7 +9,10 @@ const Stack = createNativeStackNavigator();
 export default function _navigation() {
   return (
     <Stack.Navigator
-        screenOptions={{headerShown:false}}
+        screenOptions={{
+          headerShown:false,
+          animation:"slide_from_right"
+        }}
     >
       <Stack.Screen name="home" component={Home} />
       <Stack.Screen name="setting" component={Settings} />
