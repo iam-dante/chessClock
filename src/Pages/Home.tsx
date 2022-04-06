@@ -1,6 +1,7 @@
 import React, {useContext, useEffect, useState} from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import {useTimer} from 'use-timer';
+import {Font} from '../assets/fonts';
 import {Context} from '../../App';
 
 import {SettingsIcon, PlayIcon, ResetIcon} from '../assets/icons';
@@ -10,14 +11,16 @@ function TouchTile({
   styles,
   enable,
   setFlip,
+  playerTime
 }: {
   id: string;
   styles?: object;
   enable: boolean;
+  playerTime:number;
   setFlip: (v: boolean | ((b: boolean) => boolean)) => void;
 }) {
   const {time, start, pause, reset} = useTimer({
-    initialTime: 100,
+    initialTime: playerTime,
     endTime: 0,
     timerType: 'DECREMENTAL',
   });
@@ -51,10 +54,10 @@ function TouchTile({
           setFlip(e => !e);
         }
       }}>
-      <Text style={{color: '#000000', fontSize: 72}}>
+      <Text style={{fontSize: 72, ...Font.baseStyle}}>
         {minutes + ':' + seconds}
       </Text>
-      <Text style={{color: '#000000'}}>0 MOVES</Text>
+      <Text style={{...Font.baseStyle, fontSize: 20}}>0 MOVES</Text>
     </TouchableOpacity>
   );
 }
@@ -76,6 +79,7 @@ export default function Home({navigation}: {navigation: any}) {
         styles={{transform: [{rotate: '180deg'}]}}
         enable={flip && gameReady}
         setFlip={setState}
+        playerTime={100}
       />
 
       <View
@@ -90,7 +94,7 @@ export default function Home({navigation}: {navigation: any}) {
         <ResetIcon />
       </View>
 
-      <TouchTile id="#2" enable={!flip && gameReady} setFlip={setState} />
+      <TouchTile id="#2" enable={!flip && gameReady} setFlip={setState}  playerTime={40}/>
     </View>
   );
 }

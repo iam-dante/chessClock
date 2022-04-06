@@ -3,20 +3,20 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from "./Home"
 import Settings from "./Settings";
+import { SetTime } from "./SetTime";
 
 const Stack = createNativeStackNavigator();
 
 export default function _navigation() {
   return (
     <Stack.Navigator
-        screenOptions={{
-          headerShown:false,
-          animation:"slide_from_right"
-        }}
-    >
+      screenOptions={{
+        headerShown: false,
+        animation: 'slide_from_right',
+      }}>
+      <Stack.Screen name="settime" component={SetTime} />
       <Stack.Screen name="home" component={Home} />
       <Stack.Screen name="setting" component={Settings} />
-
     </Stack.Navigator>
   );
 }

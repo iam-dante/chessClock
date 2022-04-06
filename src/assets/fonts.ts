@@ -11,14 +11,15 @@ const BASE_MED = 'DMSans-Medium';
 // Building fonts for the app
 export const Font = StyleSheet.create({
   baseStyle: {
-    fontSize: 16,
     fontFamily: BASE_FONT,
-    color: 'black',
+    color: '#000000',
+    letterSpacing: 2,
   },
   displayStyle: {
     fontSize: 18,
     fontFamily: BASE_FONT,
-    color: 'black',
+    color: '#000000',
+    letterSpacing: 2,
   },
 });
 
