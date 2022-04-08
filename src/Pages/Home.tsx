@@ -66,6 +66,8 @@ export default function Home({navigation}: {navigation: any}) {
   const [flip, setState] = useState(false);
   const [gameReady, setGameReady] = useState(false);
 
+
+
   return (
     <View
       style={{

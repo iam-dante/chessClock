@@ -14,9 +14,9 @@ export default function _navigation() {
         headerShown: false,
         animation: 'slide_from_right',
       }}>
-      <Stack.Screen name="settime" component={SetTime} />
       <Stack.Screen name="home" component={Home} />
       <Stack.Screen name="setting" component={Settings} />
+      <Stack.Screen name="settime" component={SetTime} />
     </Stack.Navigator>
   );
 }

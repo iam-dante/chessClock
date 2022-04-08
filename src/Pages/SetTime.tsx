@@ -45,22 +45,23 @@ import {privateName} from '@babel/types';
 //   .catch(err => console.log(err));
 
 export function SetTime({navigation}: {navigation: any}) {
-  
   function genList(n: number) {
     const number = [...Array(n).keys()];
     return number.map(x => x.toString());
   }
-  
-  const [modalVisible, setModalVisible] = React.useState({player1:false, player2:false});
+
+  const [modalVisible, setModalVisible] = React.useState({
+    player1: false,
+    player2: false,
+  });
   const [select, setSelect] = React.useState({
     player1: {hour: 0, minutes: 0, seconds: 0},
     player2: {hour: 0, minutes: 0, seconds: 0},
   });
 
+  var int = select.player1.hour;
 
-
-  console.log(select);
-
+  // console.log(typeof());
 
   return (
     <View
@@ -135,6 +136,7 @@ export function SetTime({navigation}: {navigation: any}) {
               }}>
               <WheelPicker
                 isCyclic
+                selectedItem={14}
                 selectedItemTextSize={18}
                 itemTextFontFamily="DMSans-Regular"
                 selectedItemTextFontFamily="DMSans-Bold"
@@ -148,9 +150,11 @@ export function SetTime({navigation}: {navigation: any}) {
                   }))
                 }
               />
+
               <WheelPicker
                 isCyclic
                 selectedItemTextSize={18}
+                selectedItem={select.player1.minutes}
                 indicatorWidth={4}
                 itemTextFontFamily="DMSans-Regular"
                 onItemSelected={selectedItem =>
@@ -163,9 +167,11 @@ export function SetTime({navigation}: {navigation: any}) {
                 style={{width: 100}}
                 data={genList(60)}
               />
+
               <WheelPicker
                 isCyclic
                 selectedItemTextSize={18}
+                selectedItem={select.player1.seconds}
                 indicatorWidth={4}
                 onItemSelected={selectedItem =>
                   setSelect(pv => ({
@@ -442,7 +448,13 @@ export function SetTime({navigation}: {navigation: any}) {
               borderRadius: 4,
               alignItems: 'center',
             }}
-            onPress={() => setModalVisible(pv => ({...pv, player1: true}))}>
+            onPress={() => {
+              // setSelect(pv => ({
+              //   ...pv,
+              //   // player1: {hour: 0, minutes: 0, seconds: 0},
+              // }));
+              setModalVisible(pv => ({...pv, player1: true}));
+            }}>
             <Text style={{fontSize: 28, ...FontStyle.regular, color: 'black'}}>
               {Number(select.player1.hour) < 10
                 ? '0' + select.player1.hour
